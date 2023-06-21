@@ -28,11 +28,12 @@ function AppBar() {
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link ><Link to="/" >Home</Link></Nav.Link>
-           
-            <Nav.Link ><Link to="/login" >Login</Link></Nav.Link>
-            <Nav.Link ><Link to="/login" >SignUp</Link></Nav.Link>
+            <Nav.Link ><Link to="/products" >Products</Link></Nav.Link>
+            {/* <Nav.Link ><Link to="/products" >CategoryPage</Link></Nav.Link> */}
+            <Nav.Link ><Link className='ms-4 btn btn-dark' to="/login" >Login</Link></Nav.Link>
+            <Nav.Link ><Link className=' btn btn-dark' to="/signup" >Sign Up</Link></Nav.Link>
             
             
           </Nav>
