@@ -1,11 +1,13 @@
 import '../App.css'
-import AppBar from '../Components/AppBar';
+import AppBar from '../components/AppBar';
 import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
-import HeaderSection from '../Components/HeaderSection';
-import FooterSection from '../Components/FooterSection';
-import CategorySection from '../Components/CategorySection';
+import HeaderSection from '../components/HeaderSection';
+import FooterSection from '../components/FooterSection';
+import CategorySection from '../components/CategorySection';
+
+// import AppBar from '../components/AppBar'
 
 
 

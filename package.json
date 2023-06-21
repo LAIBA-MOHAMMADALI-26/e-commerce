@@ -17,12 +17,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.13.0",
-<<<<<<< HEAD
     "react-stars": "^2.2.5",
     "sweetalert2": "^11.7.12"
-=======
-    "react-stars": "^2.2.5"
->>>>>>> 02418c46e1c8bad82b1bc8fa67ab66d8c3dd41b5
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
