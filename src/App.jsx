@@ -8,6 +8,7 @@ import CategoryPage from './pages/CategoryPage';
 import { useState } from 'react';
 import ProductPage from './Pages/ProductPage';
 import Products from './Pages/Products';
+import AppBar from './components/AppBar';
 // import HeaderSection from './Components/HeaderSection';
 // import FooterSection from './Components/FooterSection';
 
@@ -20,6 +21,7 @@ const [user, setUser] = useState(true)
 
   return (
 <>
+<AppBar/>
 
 
 {

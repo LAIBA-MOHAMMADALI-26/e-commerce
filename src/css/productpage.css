@@ -1,0 +1,65 @@
+body{
+    font-family:Montserrat;
+    color: black;
+}
+div.contain{
+   background-color: rgb(26, 138, 176);color:black;
+    width:100%;
+    height:auo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.right{
+    display: flex;
+    flex-direction:row; justify-content: center;
+    align-items: center;
+}
+/* Base */
+
+  h1 {
+    color:black;
+    font-size: 50px;
+    font-weight: bold;
+    /* font-family: monospace; */
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+ 
+  .caro{
+    width:50%;
+  }
+    nav{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items: center;
+        /* border: 2px solid gray; */
+        border-radius: 5%;
+        /* background-color:silver; */
+    }
+    img{
+        border-radius: 10%;
+    }
+    h3 span{
+        color:black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    div.add{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+   img.pic{
+    margin-top:50px;
+    width:350px;
+   }
+   button{
+    border-radius:50%;
+   }
+   h1,h3{
+    color: black;
+   }

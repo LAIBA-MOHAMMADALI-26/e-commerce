@@ -3,5 +3,11 @@
 content: "";
 flex: 1;
 height: 1px;
-background: #eee;
+
+
+}
+body{
+    background-color:lightblue;
+    /* background-color:yellow; */
+    font-family: Montserrat;
 }
