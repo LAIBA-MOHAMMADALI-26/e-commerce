@@ -7,6 +7,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import '/src/css/productpage.css'
 import { motion } from 'framer-motion'
 
+
 export default function ProductPage() {
   const { productID } = useParams()
   const [product, setProduct] = useState({})
@@ -134,7 +135,7 @@ export default function ProductPage() {
    */}
 
    <div className="add">
-    <img className='pic' src="https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg?w=996&t=st=1687435325~exp=1687435925~hmac=a11fab374fe282f6cd92ebb4dc45e99065c6f167525e7dd5c3c3fc9252c1c723" alt="" />
+    <img className='pic' src="https://scontent.fkhi8-1.fna.fbcdn.net/v/t39.30808-6/300168241_498516955610681_8480459161459328747_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGpRVKXD_3ovAYZK-AAvjVgj37n92QYpsmPfuf3ZBimyfF2ge8HITzixIGV45I2OHBt65WquIULtntThZ2Qkszr&_nc_ohc=ubD0gm49E8oAX8FD0vh&_nc_ht=scontent.fkhi8-1.fna&oh=00_AfDvIjw5Ni_ui3iBn_r8a6nZ9X0R33DIkQQvQhM8ufinTw&oe=6499BD64" alt="" />
     <div className="text-center cart mt-3">
             {quantity > 1 ? (
               <button
@@ -146,7 +147,7 @@ export default function ProductPage() {
             ) : (
               <button
                 disabled
-                className="btn btn-dark mx-2"
+                className="btn btn-info mx-2"
                 onClick={() => setQuantity(quantity - 1)}
               >
                 -
@@ -155,14 +156,14 @@ export default function ProductPage() {
 
             <span className="mx-4">{quantity}</span>
             <button
-              className="btn btn-dark mx-2"
+              className="btn mx-2"
               onClick={() => setQuantity(quantity + 1)}
             >
               +
             </button>
 
             <div className="mt-4">
-              <button className="mx-5 btn btn-dark" onClick={addtoCart}>
+              <button className="btn mx-5" onClick={addtoCart}>
                 Add to Cart
               </button>
             </div>
@@ -207,11 +208,11 @@ export default function ProductPage() {
                 <label htmlFor="floatingTextarea2">Comments</label>
               </div>
 
-              <button className="btn btn-dark mt-2" onClick={submitReview}>
+              <button className="btn mt-2" onClick={submitReview}>
                 Submit
               </button>
             </div>
-            <button className="btn btn-success mt-2" onClick={giveexperience}>
+            <button className="btn mt-2" onClick={giveexperience}>
               Experience
             </button>
           </div>
