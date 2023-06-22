@@ -9,7 +9,7 @@ export default function Login() {
     <div className="row d-flex align-items-center justify-content-center h-100">
       <div className="col-md-8 col-lg-7 col-xl-6">
         <img
-          src="https://img.freepik.com/free-vector/online-shopping-landing-page_33099-1725.jpg?w=996&t=st=1687435020~exp=1687435620~hmac=aad64c4504d2016968e12d50cea27ea42e4ec9b6b4ea4ad5c51daeaa3a32b6a5"
+          src="https://i.pinimg.com/736x/95/d4/c7/95d4c71d751b6ffbbe91155d704cd09b.jpg"
           className="img-fluid"
           alt="Phone image"
         />
