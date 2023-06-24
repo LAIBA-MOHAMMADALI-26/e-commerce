@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@600&family=Roboto+Condensed:wght@700&display=swap');
 body{
-    font-family:Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: black;
 }
 div.contain{
    background-color:black;color:white;
     width:100%;
-    height:auo;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,13 +38,14 @@ div.right{
         align-items: center;
         /* border: 2px solid gray; */
         border-radius: 5%;
+        height: 100%;
         /* background-color:silver; */
     }
     img{
         border-radius: 10%;
     }
     h3 span{
-        color:black;
+        /* color:black; */
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     div.add{

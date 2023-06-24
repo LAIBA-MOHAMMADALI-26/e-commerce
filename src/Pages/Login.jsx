@@ -1,42 +1,75 @@
-import React from 'react'
+
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '/src/css/Login.css'
 
 export default function Login() {
+  const savedEmail = 'example@example.com';
+const savedPassword = 'password123';
+
+
+  // const savedEmail = 'example@example.com';
+  // const savedPassword = 'password123';
+
+  const navigateTo = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if the entered email and password match the saved values
+    if (email === savedEmail && password === savedPassword) {
+      // Valid credentials
+      setError('');
+      // Redirect to the home page
+      navigateTo('/Home');
+    } else {
+      // Invalid credentials
+      alert('Invalid email or password.');
+    }
+  }
+  
   return (
    
     <>
+
   {/* Hello world */}
   <div className="container py-5 h-100">
     <div className="row d-flex align-items-center justify-content-center h-100">
       <div className="col-md-8 col-lg-7 col-xl-6">
         <img
-          src="https://i.pinimg.com/736x/95/d4/c7/95d4c71d751b6ffbbe91155d704cd09b.jpg"
+          src="https://img.freepik.com/free-vector/online-shopping-landing-page_33099-1725.jpg?w=996&t=st=1687435020~exp=1687435620~hmac=aad64c4504d2016968e12d50cea27ea42e4ec9b6b4ea4ad5c51daeaa3a32b6a5"
           className="img-fluid"
           alt="Phone image"
         />
       </div>
       <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* Email input */}
           <div className="form-outline mb-4">
-            <input
-              type="email"
-              id="form1Example13"
-              className="form-control form-control-lg"
-            />
-            <label className="form-label" htmlFor="form1Example13">
+          <label className="form-label" htmlFor="form1Example13">
               Email address
             </label>
+            <input
+              type="email" value={email}
+              id="form1Example13" onChange={(e) => setEmail(e.target.value)}
+              className="form-control form-control-lg"
+            />
+           
           </div>
           {/* Password input */}
           <div className="form-outline mb-4">
-            <input
-              type="password"
-              id="form1Example23"
-              className="form-control form-control-lg"
-            />
-            <label className="form-label" htmlFor="form1Example23">
+          <label className="form-label" htmlFor="form1Example23">
               Password
             </label>
+            <input  value={password} 
+              type="password"
+              id="form1Example23" onChange={(e) => setPassword(e.target.value)}
+              className="form-control form-control-lg" />
+            
           </div>
           <div className="d-flex justify-content-around align-items-center mb-4">
             {/* Checkbox */}
@@ -53,12 +86,11 @@ export default function Login() {
                 Remember me{" "}
               </label>
             </div>
-            <a href="#!">Forgot password?</a>
+            {/* <a href="#!">Forgot password?</a> */}
           </div>
           {/* Submit button */}
-          <button type="submit" className="btn btn-primary btn-lg btn-block w-100">
-            Sign in
-          </button>
+          {error && <p>{error}</p>}
+          <button type="submit" className="btn btn-primary btn-lg btn-block w-100">SignUp</button>
           <div className="divider d-flex align-items-center my-4">
             <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
           </div>
@@ -88,4 +120,5 @@ export default function Login() {
 
     
   )
-}
+
+  }

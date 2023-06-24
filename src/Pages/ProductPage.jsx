@@ -68,9 +68,9 @@ export default function ProductPage() {
           <div className="right">
             {/* <h1><Link to="/products">products/</Link></h1> */}
 
-            <motion.h1 animate={{ x: 100, scale: 1 }} initial={{ scale: 0 }}>
+            <h1 animate={{ x: 100, scale: 1 }} initial={{ scale: 0 }}>
               ProductName: {product.title}
-            </motion.h1>
+            </h1>
           </div>
           <div className="image">
             <div className="w-100 car">
@@ -135,7 +135,7 @@ export default function ProductPage() {
    */}
 
    <div className="add">
-    <img className='pic' src="https://scontent.fkhi8-1.fna.fbcdn.net/v/t39.30808-6/300168241_498516955610681_8480459161459328747_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGpRVKXD_3ovAYZK-AAvjVgj37n92QYpsmPfuf3ZBimyfF2ge8HITzixIGV45I2OHBt65WquIULtntThZ2Qkszr&_nc_ohc=ubD0gm49E8oAX8FD0vh&_nc_ht=scontent.fkhi8-1.fna&oh=00_AfDvIjw5Ni_ui3iBn_r8a6nZ9X0R33DIkQQvQhM8ufinTw&oe=6499BD64" alt="" />
+    <img className='pic' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9OWBUyXpmVCMEmL5Ax5f7mRg_4CLZzzvhaw&usqp=CAU" alt="" />
     <div className="text-center cart mt-3">
             {quantity > 1 ? (
               <button

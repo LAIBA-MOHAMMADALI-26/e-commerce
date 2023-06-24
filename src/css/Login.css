@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+label.form-label{
+    color: white;
+}
+label.form-check-label{
+    color: white;
+}
